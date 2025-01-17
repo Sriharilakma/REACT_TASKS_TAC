@@ -1,0 +1,145 @@
+/* General Styles for Body */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #f9f9f9;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  overflow: hidden;
+}
+
+/* Dark Mode Styles for Body */
+body.dark {
+  background-color: #333;
+  color: white;
+}
+
+/* Header styles */
+.app-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #34495e;
+  color: white;
+  padding: 2rem 0;
+  text-align: center;
+  z-index: 1000;
+  height: 5%;
+}
+
+/* Navbar styling within the header */
+.app-nav {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+/* Logo styling */
+.logo{
+  font-size: 40px;
+  margin-top: 0;
+  margin-left: 10px;
+  position: absolute;
+  top: 22px;
+}
+
+/* Links container styling */
+.links{
+  margin-left: 35px;
+}
+
+.links .active {
+  background-color: #ecf0f1;
+  color: #34495e;
+  border-radius: 8px;
+  padding: 5px;
+}
+.app-header.dark .links .active {
+  color: black; /* Change text color to black in dark mode */
+}
+/* Style for the navigation links */
+.nav-link {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  margin-right: 25px;
+  font-size: 25px;
+}
+
+/* Style for navigation link on hover */
+.nav-link:hover {
+  color: #354c61;
+  background-color: #ecf0f1;
+  padding: 0.3rem;
+  border-radius: 5px;
+  transition: 0.2s ease;
+}
+
+.app-header.dark .nav-link:hover{
+  color: black;
+}
+
+
+/* Dark Mode Header styling */
+.app-header.dark {
+  background-color: #222;
+}
+
+/* Main content area styling */
+.app-main {
+  position: fixed;
+  top: 70px; 
+  bottom: 50px;
+  left: 0;
+  right: 0;
+  transition: background-color 0.3s ease;
+  height: 100%;
+}
+
+/* Dark mode styling for main content */
+.app-main.dark {
+  background-color: #444;
+}
+
+
+/* Theme toggle button styling */
+.theme-toggle-btn {
+  position: absolute;
+  right: 10px;
+  top: 25px;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 2.2rem;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+/* Hover effect for the theme toggle button */
+.theme-toggle-btn:hover {
+  transform: scale(1.1);
+}
+
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 600px) {
+    /* Logo resizing and repositioning */
+    .logo {
+      font-size: 25px;
+      top: 32px;
+    }
+
+    /* Theme toggle button resizing */
+    .theme-toggle-btn {
+      font-size: 1.5rem;
+      top: 35px;
+    }
+
+     /* Links container positioning */
+    .links {
+      position: absolute;
+      left: 8px;
+    }
+}

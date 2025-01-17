@@ -1,0 +1,134 @@
+/* General Container */
+.home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  text-align: center;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.home.dark {
+  background-color: #5b5f5f; /* Dark background */
+  color: #ecf0f1; /* Light text color */
+}
+
+.home-card {
+  padding: 30px;
+  border-radius: 5px;
+  box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.3);
+  background-color: #d7dbdd;
+  transition: background-color 0.3s;
+}
+
+.home-card.dark {
+  background-color: #cbcccc; /* Dark card background */
+}
+
+.home-title {
+  font-size: 2.5rem;
+  color: #1b4f72;
+}
+
+.home-title.dark {
+  color: black; /* Light text for title */
+}
+
+.home-count {
+  font-size: 1.5rem;
+  margin: 0.5rem 0;
+  margin-bottom: 1rem;
+  color: black;
+}
+
+strong {
+  font-size: 40px;
+}
+
+.positive {
+  color: #27ae60;
+}
+
+.negative {
+  color: #e74c3c;
+}
+
+.initial {
+  color: black;
+}
+
+.home-buttons {
+  display: flex;
+  gap: 1rem;
+}
+
+.home-button {
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.home-button:hover {
+  transform: scale(1.05);
+}
+
+.increment {
+  background-color: #27ae60;
+}
+
+.reset {
+  background-color: rgb(81, 81, 81);
+}
+
+.decrement {
+  background-color: #e74c3c;
+}
+
+.increment:hover {
+  background-color: #197640;
+}
+
+.reset:hover {
+  background-color: rgb(50, 49, 49);
+}
+
+.decrement:hover {
+  background-color: #961709;
+}
+
+.home-button:active {
+  transform: scale(0.95);
+}
+
+/* More specific dark mode button styles */
+.home.dark .home-button {
+  background-color: rgb(26, 25, 25); /* Green background for dark mode */
+  color: white; /* White text for dark mode */
+}
+
+/* Dark mode hover and active button styles */
+.home.dark .home-button:hover {
+  background-color: #323334 ; /* Darker green on hover */
+}
+
+.home.dark .home-button:active {
+  background-color: #1c6b3d; /* Even darker green when clicked */
+}
+
+/* Dark mode specific styles for increment, reset, decrement buttons */
+.home.dark .increment:hover {
+  background-color: #323334; /* Green for increment */
+}
+
+.home.dark .reset:hover {
+  background-color: #323334; /* Darker color for reset */
+}
+
+.home.dark .decrement:hover {
+  background-color: #323334; /* Red for decrement */
+}
